@@ -1933,8 +1933,7 @@ http.request("http://tabchi.com/ecsbot/api/update.php?bot=" .. (bot_id or 0) .. 
 database:set("bot:Uptime", os.time())
 function tdcli_update_callback(data)
 -- fail 10908
-unluac.decompile.expression.FunctionCall@7f7ef0a7
--1
+unluac.decompile.expression.FunctionCall@7f7ef0a7-1
   local our_id = database:get("Our_ID") or 0
   local api_id = database:get("Bot:Api_ID") or 0
   if data.ID == "UpdateNewMessage" then
